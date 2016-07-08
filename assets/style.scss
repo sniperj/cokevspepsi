@@ -1,0 +1,541 @@
+@import '_prefixMixins' ; 
+@import '_font-size' ; 
+
+$font: 'Open Sans', sans-serif ; 
+$break1: 1199px; 
+$break2: 991px; 
+$break3: 768px; 
+$break4: 767px; 
+$break5: 599px; 
+$break6: 548px; 
+$break7: 454px; 
+$break8: 406px; 
+$break9: 360px; 
+$details-color:#fff ; 
+$screen-breaks:($break1)($break2);/*(510);(460)(430);parameter for gen-font-sizes those rep screen breaks where function would recalculate the font size*/
+
+
+
+html
+{
+
+//background: linear-gradient(to right, rgba(151,19,46,1) 0%,rgba(151,19,46,1) 24%,rgba(34,49,92,1) 65%,rgba(34,49,92,1) 100%); /* W3C */
+background: #000 ;     
+}
+body { 
+  font-family: $font;
+  background-color:transparent ;
+}
+.bgWrapper
+{
+    //isplay:block ; 
+    width:100%;
+    background: url('bg_middle.jpg') top center no-repeat, linear-gradient(to right, rgba(151,19,46,1) 0%,rgba(151,19,46,1) 24%,rgba(48,63,105,1) 65%,rgba(48,63,105,1) 100%);
+background-size:  auto    
+}
+#banner 
+{
+    background: rgb(152,128,175); /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(152,128,175,1)), color-stop(51%,rgba(94,46,131,1)), color-stop(64%,rgba(80,32,117,1)), color-stop(64%,rgba(80,32,117,1)), color-stop(100%,rgba(54,4,89,1))); /* Chrome,Safari4+ */
+    background: linear-gradient(to bottom,  rgba(152,128,175,1) 0%,rgba(94,46,131,1) 51%,rgba(80,32,117,1) 64%,rgba(80,32,117,1) 64%,rgba(54,4,89,1) 100%); /* W3C */
+padding:1%;
+    border-bottom:6px solid #91bd3d;
+
+}
+    #logo
+    {
+        font-family: $font ; 
+        text-transform: uppercase ; 
+        font-size:24px;
+        line-height: 1;
+        margin-top:0;
+        font-weight:300 ;
+        color:#fff;
+        //font-style:italic;
+
+      img 
+        {
+            max-width:123px!important; 
+            width:80% ;
+            @media screen and (max-width:768px)
+            {
+                width: 30% ; 
+                margin: 0 auto ;            
+            }
+        }
+        #logoa, #logob
+        {
+            @media screen and(max-width:$break4)
+            {
+
+                display:inline-block ; 
+                margin: 0 auto ; 
+
+            }        
+            
+        }
+        @media screen and(max-width:$break4)
+        {
+
+            display:block ; 
+            margin: 0 auto ; 
+            text-align: center;
+            font-size:22px;
+        }
+
+    }
+    sup 
+    {
+        vertical-align: middle;
+        font-size: 50%;
+    }
+
+    div
+    {
+        
+        &#lpLeft
+        {
+            display:inline-block ;
+            text-align: right;
+            width:28%;
+            .product1
+            {
+                cursor:pointer;
+                display:inline-block ; 
+                max-width:317px ; 
+                width:90% ; 
+                img 
+                {
+                    max-width:317px ; 
+                    width:100% ;             
+                }
+            }
+            @media screen and (max-width:$break4)
+            {
+                display:none;
+            }            
+        }
+        &#lpRight 
+        {
+            display:inline-block ; 
+            text-align: left;
+            width:28%;
+            .product2
+            {
+                cursor:pointer;
+                display:inline-block ; 
+                max-width:317px ; 
+                width:90% ; 
+                img 
+                {
+                    max-width:317px ; 
+                    width:100% ;             
+                }                
+            } 
+            @media screen and (max-width:$break4)
+            {
+                display:none;
+            }
+        }
+        #mobileProducts
+        {
+            display:none ;
+            
+             @media screen and (max-width:$break4)
+            {
+                display:block;
+                width:100%;
+            }
+            .product1, .product2
+            {
+                cursor:pointer;
+                display:inline-block ; 
+                max-width:317px ; 
+                width:47% ; 
+                img 
+                {
+                    max-width:317px ; 
+                    width:100% ;             
+                }                
+            } 
+            .product1
+            {
+                padding-right:7%;
+            }
+            .product2
+            {
+                padding-left:7%;
+            }
+            
+            
+        }
+        
+       &#lpMiddle
+        {
+            display:inline-block ; 
+            max-width: 463px;
+            width: 40%;   
+             @media screen and (max-width:$break4)
+            {
+                max-width:100%;
+                display:block;
+                width:100%;
+                margin: 0 auto ; 
+                text-align: center;
+            }            
+        }
+
+    }
+
+
+#header1
+{   display:inline-block;
+    font-family: $font;
+    font-size: 68px ; 
+    font-weight:  300;
+    text-align: center;
+    line-height: 1 ;     
+    margin-bottom:4%;
+    margin-top:1%;
+    vertical-align: middle ;
+    text-transform:uppercase ;
+   
+
+   // text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.41);
+    @media screen and (max-width:$break4)    
+    {
+        text-align: center;    
+    }
+    #header1a
+    {
+        font-weight:800 ; 
+        color:#fff ; 
+         @media screen and (max-width:$break4)
+        {
+            display: block;
+            max-width:331px;
+            width:100%;
+            text-align: center ;
+            margin: 0 auto;
+
+        } 
+        @media screen and (max-width:$break7)
+        {
+
+            font-size: 41px;   
+
+        }    
+        @media screen and (max-width:$break8)
+        {
+
+            font-size: 37px;   
+
+        }        
+    }
+    #header1b 
+    {
+        display:inline-block ;
+        font-weight:700 ; 
+        color:#fff ; 
+        text-transform: none ;
+        font-size:35px;
+        @include gen-font-sizes(30,$screen-breaks,2);
+        
+        @media screen and (max-width:$break4)
+        {
+
+            font-size: 41px;   
+            margin-bottom:2%;
+
+        }         
+        @media screen and (max-width:$break6)
+        {
+
+            font-size:33px;   
+
+        }          
+        @media screen and (max-width:$break7)
+        {
+
+            font-size:30px;   
+
+        } 
+        @media screen and (max-width:$break8)
+        {
+
+            font-size:21px;   
+
+        } 
+        
+    }    
+    
+    #header1c
+    {
+        display:inline-block ; 
+        font-weight:800;
+        color:#fcc100;
+        @include gen-font-sizes(45,$screen-breaks,3);
+    }   
+    #header1d 
+    {
+        font-size:30px;
+        font-weight:400;
+        margin-bottom:6%;
+        a 
+        {
+            
+            color: $details-color;   
+            text-decoration: underline;
+            
+        }
+        @include gen-font-sizes(25,$screen-breaks,2);
+        @media screen and (max-width:$break4)
+        {
+
+            font-size:30px;
+            margin-bottom:0;
+            margin-top:3%;
+
+        }
+        @media screen and (max-width:$break5)
+        {
+
+            font-size:25px;
+
+        } 
+        @media screen and (max-width:$break6)
+        {
+
+            font-size:20px;
+
+        }         
+    }
+    //@include gen-font-sizes(68,$screen-breaks,5); 
+    @include gen-font-sizes(55,$screen-breaks,3); 
+}
+#dImg
+{
+    max-width: 403px; 
+    width: 30% ;     
+    display:inline-block ; 
+    margin: 0 auto ; 
+    margin-bottom:7%;
+    //margin-right: -11%;
+    img 
+    {
+        max-width: 326px; 
+        width: 95% ;     
+    
+    }
+    @media screen and (max-width:$break2)
+    {
+
+      width:37%;  
+    }
+    @media screen and (max-width:$break4)
+    {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width:40%;
+        
+    }
+}
+  #radio1 
+  {
+       display:none;
+  }
+
+  #radio2 
+  {
+      display:none;
+  }
+  label .unselected 
+  {
+    display:inline-block;
+  }
+  label .selected
+  {
+    display:none;
+  }
+
+.wrappingForm
+{   
+    display:block;
+    text-align: center;
+    margin-top:0;
+    width:100% ;
+
+    .outerForm
+    {
+        display:inline-block;
+        margin: 0 auto ; 
+        text-align: center;
+        width:100% ;
+        #subHeader
+        {
+            text-align: center;
+            img 
+            {
+                max-width: 485px ; 
+                width: 100%;
+            }
+        }
+        #csBox
+        {
+            display:block;
+            max-width:800px;
+            width:100%;
+            padding:1%;
+            font-family: $font;
+            @include border-radius(10px);
+            
+            padding:1%;
+            text-align: center;
+            margin: 0 auto;
+            
+
+            .boxField
+            {
+                
+                //width:40%;
+                display:block;
+                vertical-align: bottom ;
+                margin-bottom:2%;
+                .boxTitle
+                {
+                    font-family: $font;
+                    font-size:29px;
+                    font-weight:700;   
+                    color:#fff;
+                    @media screen and (max-width:599px)
+                    {
+                        font-size:25px;
+                    }                
+                }                
+                input,select
+                {
+                    @include border-radius(0);
+                    border: 1px solid #acb3b9;
+                    box-shadow:4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+                    width:100%;
+                    font-size:29px;
+                    text-align: left;
+                    padding: 1% 2% 1%;
+                    vertical-align: middle;
+                    width: 95%;     
+                    @media screen and (max-width:$break3)
+                    {
+                        font-size:26px;
+                    }                    
+
+                    @media screen and (max-width:$break5)
+                    {
+                        font-size:25px;
+                    }                    
+                }
+                #submit
+                {
+                    font-family: $font;
+                    font-weight:700;
+                    font-size:34px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include border-radius(0);
+                    background: #000000;
+                    padding:3% 17% ;
+                    color:#fff;
+                    //max-width:600px; 
+                    width:95%;
+                    box-shadow:none;
+                    border: none;
+                    
+                    @media screen and (max-width:599px)
+                    {
+                        font-size:29px;
+                       // padding:1% 17% 1% 17%;
+                    }
+
+                }/* End of submit*/        
+                @media screen and (max-width: $break4)
+                {
+                    display:block;
+                    max-width: 600px;
+                    width:100%;
+                    &:first-of-type
+                    {
+                        margin-right:0;
+                        margin-bottom:4%;
+                        margin-top:4%;
+                        
+                    }                    
+                }
+            }/*End of field wrapper*/
+                @media screen and (max-width: $break4)
+                {
+                    display:inline-block ; 
+                    width: 100% ; 
+                }
+        }/*End of Cs box wrapper*/
+
+
+
+
+
+
+    }/*End outer Form*/
+    @media screen and (max-width:$break4)    
+    {
+        text-align: center;    
+    }
+
+}/*End wrapping Form*/
+
+footer
+{
+  color:$details-color;
+  margin-top:4%;
+  font-size: 10pt;
+  text-align: center;
+  @include disclaimer  ;      
+    a {
+        color:$details-color!important;
+        &:hover{
+        color:$details-color!important;
+        }
+        text-decoration: underline;
+    }    
+
+}
+
+nav 
+{
+    text-align: center;
+    margin-top:1%;    
+}
+
+#disclaimer_container a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: $details-color;
+  width: 802px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+
+div#footerLabel {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1%;
+}
+#disc2,#footerLinks
+{
+margin-top:1%;
+}

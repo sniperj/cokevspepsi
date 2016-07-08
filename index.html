@@ -1,0 +1,160 @@
+ <!doctype html>
+ <!--[if lte IE 7]> <html class="ie7" lang="en"> <![endif]-->
+ <!--[if IE 8]>     <html class="ie8" lang="en"> <![endif]-->
+ <!--[if IE 9]>     <html class="ie9" lang="en"> <![endif]-->
+ <!--[if !IE]><!--> <html lang="en">             <!--<![endif]-->
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width" />
+     <title>{SITE_NAME}</title>
+     <subtemplate:htmlshiv/>
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/style.css">
+  
+
+	 
+ </head>
+ <body>
+     
+<div class='bgWrapper'>     
+     <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                        <div id='logo'> <div id='logoa'>inbox</div> <div id='logob'>offer for u</div></div> 
+                </div> 
+<!--                <div class="col-sm-10">  </div>-->
+            </div>          
+              <div class="row">
+                <div class="col-sm-12">
+                   <div id='cWrapper'> 
+                        <div id='lpLeft'>
+                                    <div class='product1'>
+                                        <label class='lpProd1'>
+                                                <input type='radio' name='q1' id='radio1' value='1-product1'>
+                                                <img class='unselected' src='assets/product1_unselected.png'>
+                                                <img class='selected' src='assets/product1_selected.png'>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                        <div id='lpMiddle'>
+                            <div id='header1'>
+                                    <div id='header1a'>which soda is better?</div>
+                                
+                                    <div id='mobileProducts'>
+                                        <div class='product1'>
+                                            <label class='lpProd1'>
+                                                <input type='radio' name='q1' id='radio1' value='1-product1'>
+                                                <img class='unselected' src='assets/product1_unselected.png'>
+                                                <img class='selected' src='assets/product1_selected.png'>
+                                        </label>                                               
+                                        </div>
+                                        <div class='product2'>
+                                            <label class='lpProd2'>
+                                                <input type='radio' name='q1' id='radio2' value='1-product2'>
+                                              	<img class='unselected' src='assets/product2_unselected.png'>
+                                                <img class='selected' src='assets/product2_selected.png'>
+                                            </label>                                                
+                                        </div>
+                                    </div>    
+                                
+                                    <div id='header1b'><div id='header1ba'>Tell us. <div>Then get a $100 gift card,</div>
+                                    <div id='header1d'><a href='javascript:void(0)' onclick="showD('details')" >details apply</a></div>    
+                                    </div>
+                                    <div class='wrappingForm'>
+
+                                        <div class='outerForm'>
+
+                                            <div id='csBox'>
+                                                <div class='boxField'><input type="text" name="email" id="email" value="" Placeholder="ENTER YOUR EMAIL"></div>
+                                                <div class='boxField'>
+                                                    <select id='gift' name='gift'>
+                                          				 <option value="32268">Select My Gift Card</option>  
+                                                      <option value="32268">$100 Visa<sup>&reg;</sup> Gift Card</option>  
+                                                      <option value="32270">$100 Bennigan's<sup>&reg;</sup> Gift Card</option>  
+                                                      <option value="32269">$100 Boston Market<sup>&reg;</sup> Gift Card</option>
+                                                      <option value="32271">$100 in Chili's<sup>&reg;</sup> Gift Cards</option>                    
+                                                      <option value="32272">$100 in Hard Rock Cafe<sup>&reg;</sup> Gift Cards</option>
+                                                      <option value="32273">$100 in Hooters<sup>&reg;</sup> Gift Cards</option>					
+                                                      <option value="32274">$100 Houlihan's<sup>&reg;</sup> Gift Card</option>
+                                                      <option value="32275">$100 Longhorn Steakhouse<sup>&reg;</sup> Gift Card</option>
+                                                      <option value="32276">$100 in Macaroni Grill<sup>&reg;</sup> Gift Cards</option>			
+                                                      <option value="32277">$100 Rainforest Cafe<sup>&reg;</sup> Gift Card</option>
+                                                    </select>    
+                                                </div>
+                                                <div class='boxField'>
+                                                    <input type="submit" id='submit' name="submit" value="Continue">
+                                                </div>
+                                            </div>   
+
+                                        </div>                        
+
+                                    </div>
+                                </div>
+
+
+
+                            </div> 
+                        </div>           
+                        <div id='lpRight'>
+                            <div class='product2'>
+                                <label class='lpProd2'>
+                                        <input type='radio' name='q1' id='radio2' value='1-product2'>
+                                        <img class='unselected' src='assets/product2_unselected.png'>
+                                        <img class='selected' src='assets/product2_selected.png'>
+                                </label>
+                            </div>
+                        </div>       
+                    </div>
+         
+                </div>     
+     
+     </div><!-- row-->                    
+     
+    </div><!-- container -->     
+</div>     
+     <div class="container">
+         <div class="row">    
+              <div class="col-md-12">
+                     <footer>
+                         <div><strong>{SITE_NAME} Gift Program is not <span data-id="disclaimer">endorsed, sponsored by or affiliated with Visa, Visa International Service Association, or any other merchants listed above. Such terms are registered trademarks of their respective owners.</span></strong></div>
+                         <div align="center"><!--BeginField:Copyright-->Copyright &copy; <span id="year">{year}</span> {SITE_NAME}. All rights reserved.<!--EndField:Copyright--></div>
+                     </footer>
+              </div>
+          </div>
+     </div>      
+
+ <!-- START Pop-up Disclaimer -->
+ <div style="width:375px; left: 50%; top: 50%; margin-left: -161px; margin-top: -148.5px; position: fixed; z-index: 10000;">
+     <div id="details" onMouseOver="showD('details')" onMouseOut="hideD('details')">
+          <div align="right" style="padding-bottom:5px;">
+               <input type="button" onClick="hideD('details')" onBlur="hideD('details')" value="Close">
+          </div>               
+         {Disclaimer here}
+     </div>
+ </div>
+ <!-- END Pop-up Disclaimer -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script>
+     $(function() {
+         
+         $('label').on('click',function(){
+             var v_class = $(this).attr('class') ; 
+            $('label .selected').hide() ; 
+            $('label .unselected').show() ;  
+            $('.'+v_class ).find('.unselected').hide() ;    
+            $('.'+v_class ).find('.selected').show() ;          
+         });
+            
+
+     });
+     function showD(id) {
+      document.getElementById(id).style.display = "block";  
+    }
+    function hideD(id) {
+      document.getElementById(id).style.display = "none"; 
+    }   
+ </script>
+ </body>
+ </html>
